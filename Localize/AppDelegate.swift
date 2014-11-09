@@ -16,6 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+    
+        let initialViewController:UIViewController = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateInitialViewController() as UIViewController
+        // .instantiatViewControllerWithIdentifier() returns AnyObject! this must be downcast to utilize it
+        
+        window!.rootViewController = initialViewController;
+ 
         return true
     }
 

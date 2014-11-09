@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		D03244931A0F92C300989060 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03244921A0F92C300989060 /* AppDelegate.swift */; };
 		D03244951A0F92C300989060 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03244941A0F92C300989060 /* ViewController.swift */; };
-		D03244981A0F92C300989060 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03244961A0F92C300989060 /* Main.storyboard */; };
 		D032449A1A0F92C300989060 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03244991A0F92C300989060 /* Images.xcassets */; };
-		D032449D1A0F92C300989060 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D032449B1A0F92C300989060 /* LaunchScreen.xib */; };
 		D03244A91A0F92C400989060 /* LocalizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03244A81A0F92C400989060 /* LocalizeTests.swift */; };
+		D03244C21A0F97A200989060 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D03244C01A0F97A200989060 /* LaunchScreen.xib */; };
+		D03244C61A0F97B400989060 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03244C81A0F97B400989060 /* Main.storyboard */; };
+		D03244C91A0F97BF00989060 /* back-button.png in Resources */ = {isa = PBXBuildFile; fileRef = D03244CB1A0F97BF00989060 /* back-button.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +31,15 @@
 		D03244911A0F92C300989060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D03244921A0F92C300989060 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D03244941A0F92C300989060 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D03244971A0F92C300989060 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D03244991A0F92C300989060 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D032449C1A0F92C300989060 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D03244A21A0F92C400989060 /* LocalizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03244A71A0F92C400989060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D03244A81A0F92C400989060 /* LocalizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizeTests.swift; sourceTree = "<group>"; };
+		D03244C01A0F97A200989060 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		D03244CA1A0F97BF00989060 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/back-button.png"; sourceTree = "<group>"; };
+		D03244CD1A0F97D000989060 /* ar */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ar; path = "ar.lproj/back-button.png"; sourceTree = "<group>"; };
+		D09502781A0F9CEC00D555B4 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		D09502791A0F9D0100D555B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +81,11 @@
 		D032448F1A0F92C300989060 /* Localize */ = {
 			isa = PBXGroup;
 			children = (
+				D03244C01A0F97A200989060 /* LaunchScreen.xib */,
+				D03244C81A0F97B400989060 /* Main.storyboard */,
 				D03244921A0F92C300989060 /* AppDelegate.swift */,
 				D03244941A0F92C300989060 /* ViewController.swift */,
-				D03244961A0F92C300989060 /* Main.storyboard */,
 				D03244991A0F92C300989060 /* Images.xcassets */,
-				D032449B1A0F92C300989060 /* LaunchScreen.xib */,
 				D03244901A0F92C300989060 /* Supporting Files */,
 			);
 			path = Localize;
@@ -90,6 +94,7 @@
 		D03244901A0F92C300989060 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D03244CB1A0F97BF00989060 /* back-button.png */,
 				D03244911A0F92C300989060 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -175,6 +180,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = D03244841A0F92C300989060;
 			productRefGroup = D032448E1A0F92C300989060 /* Products */;
@@ -192,9 +198,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03244981A0F92C300989060 /* Main.storyboard in Resources */,
-				D032449D1A0F92C300989060 /* LaunchScreen.xib in Resources */,
+				D03244C91A0F97BF00989060 /* back-button.png in Resources */,
+				D03244C21A0F97A200989060 /* LaunchScreen.xib in Resources */,
 				D032449A1A0F92C300989060 /* Images.xcassets in Resources */,
+				D03244C61A0F97B400989060 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,20 +243,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D03244961A0F92C300989060 /* Main.storyboard */ = {
+		D03244C81A0F97B400989060 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D03244971A0F92C300989060 /* Base */,
+				D09502781A0F9CEC00D555B4 /* ar */,
+				D09502791A0F9D0100D555B4 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D032449B1A0F92C300989060 /* LaunchScreen.xib */ = {
+		D03244CB1A0F97BF00989060 /* back-button.png */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D032449C1A0F92C300989060 /* Base */,
+				D03244CA1A0F97BF00989060 /* en */,
+				D03244CD1A0F97D000989060 /* ar */,
 			);
-			name = LaunchScreen.xib;
+			name = "back-button.png";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -289,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -326,7 +335,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -407,6 +416,7 @@
 				D03244AE1A0F92C400989060 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D03244AF1A0F92C400989060 /* Build configuration list for PBXNativeTarget "LocalizeTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +425,7 @@
 				D03244B11A0F92C400989060 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
